@@ -1,0 +1,148 @@
+/* @override http://localhost:4567/stylesheets/app.css */
+
+body {
+    background-color: #eeeeee;;
+    background-repeat: repeat;
+}
+
+div.container {
+    border: 6px solid black;
+    background-color: white;
+
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: bold;
+    color: #172232;
+}
+
+  h1 span {
+      color: #666666;
+  }
+
+div#form-container {
+	margin-bottom: 1.5em;
+}
+
+fieldset {
+    border: 1px solid black;
+    background-image: url(/images/stripes_background.png);
+    
+}
+
+img#ajax-loader {
+    position: relative;
+    z-index: 666;
+    top: 4px; left: 46px;
+    display: none;
+}
+
+#waveform {
+    position: relative;
+    height: 140px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-attachment: scroll;
+    display: none;
+    padding: 0; margin: 0;
+    border: 1px solid black;
+}
+
+#waveform-selection {
+    position: relative;
+    top: 0; left: 0;
+    background: transparent url(/images/semi-transparent.gif);
+    width: 300px; height: 100%;
+    z-index: 1;
+    cursor: move;
+}
+
+  #waveform-selection button, #waveform-selection button:active {
+    margin: 0 auto; 
+    display: block; 
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    top: 52px;
+    padding: 0;
+  }
+
+  #waveform-selection span {
+      z-index: 2;
+      position: absolute;
+      font-size: 12px;
+      top: -10px;
+      font-weight: bold;
+      display:block;
+      background-color: white;
+      border: 1px solid black;
+      padding: 2px;
+      background-image: url(/images/white_background.gif);
+      background-repeat: repeat;
+
+  }
+
+  #waveform-selection:hover .ui-resizable-handle {
+      visibility: visible;
+  }
+
+  .ui-resizable-handle {
+      visibility: visible;
+  }
+
+  
+
+  .ui-resizable-handle {
+      visibility: hidden;
+      position: absolute; 
+      background-color: #FCFC61;
+      width: 30px;
+      height: 18px;
+      top: 61px;
+  }
+
+  .ui-resizable-w {
+      left: -30px;
+      cursor: w-resize;
+}
+
+  .ui-resizable-e {
+      right: -30px;
+      cursor: e-resize;
+  }
+
+
+  #waveform-play-progress {
+      height: 140px;
+      background-color: red;
+      width: 1px;
+      z-index: -1;
+      position: absolute;
+      margin-left: 2px;
+      top: 0px; 
+      left: 0px;
+      display: none;
+  }
+  
+  div#download-link {
+	text-align: right;	
+  }
+  
+    div#download-link A {
+		visibility: hidden;
+		background-color: #fcfc61;
+	font-size: 1.3em;
+}
+  
+  div#about p {
+	font: 1.2em Georgia, "Times New Roman", Times, serif;
+  }
+  
+  div#about p span {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-weight: bold;
+  }
+
