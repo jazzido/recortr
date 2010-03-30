@@ -1,0 +1,8 @@
+<script type="application/javascript">
+  window.parent.uploadFinished({clip_id: '<%=@clip_id%>',
+                                plot_url: '<%=@png_path%>?<%=Time.now.to_f%>',
+                                plot_width: <%=WaveGrapher::SURFACE_WIDTH%>, 
+                                plot_padding: <%=WaveGrapher::PADDING_X%>, 
+                                samples_c: <%=@wg.samples_c%>, 
+                                wave_duration: <%=@wg.duration%>});
+</script>

@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+  <head>
+    <title>recortr</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/stylesheets/blueprint/screen.css" type="text/css" media="screen, projection" />
+    <!--[if IE]>
+     <link rel="stylesheet" href="/stylesheets/blueprint/ie.css" type="text/css" media="screen, projection">
+    <![endif]-->
+    <!--script type="application/javascript" src="/javascripts/jquery.js"></script-->
+    <script src="http://www.google.com/jsapi"></script>
+    <script type="application/javascript">
+      google.load('jquery', '1.2.6');
+    </script>
+    <script type="application/javascript" src="/javascripts/jquery-ui.js"></script>
+    <script type="application/javascript" src="/javascripts/soundmanager2.js"></script>
+    <script type="application/javascript" src="/javascripts/clips.js"></script>
+    <link rel="stylesheet" href="/stylesheets/app.css" type="text/css" media="screen, projection" /> 
+  </head>
+  <body>
+    <div class="container">
+      <div class="column last span-20 prepend-2">
+	<div class="column span-10"><h1>recortr<span>beta</span></h1></div>
+	<div class="column span-10 last" style="text-align: right;"><h1 style="color: #999999; font-weight: normal;">clipcropcut</h1></div>
+      </div>
+      <div class="column last span-20 prepend-2" id="form-container">
+	<form action="/" method="post" enctype="multipart/form-data" target="upload_iframe">
+	  <fieldset>
+	    <label for="mp3_upload">Upload your MP3 and be ready for the awesomeness:</label>
+	    <input type="file" id="mp3_upload" name="mp3_upload" />
+	    <img src="/images/ajax-loader.gif" id="ajax-loader" />
+	  </fieldset>
+	</form>
+      </div>
+      <iframe name="upload_iframe" id="upload_iframe" src="" style="display:none;"></iframe>
+      <div class="column last span-20 prepend-2" style="margin-bottom: 20px;">
+	<div id="waveform">
+	  <div id="waveform-selection">
+	    <div id="waveform-load-progress">
+	    </div>
+	    <div id="waveform-play-progress">
+	    </div>
+	    <button>
+	      <img src="/images/thumb_icon_play_rot_0.png" />
+	    </button>
+	  </div>
+	</div>
+	<div class="column last" id="download-link">
+	  <a href="">Download the clip</a>
+	</div>
+      </div>
+      <div class="column last span-20 prepend-2" id="about">
+	<p><span>recortr</span> is an online tool for making clips out of your MP3s. It is an experiment and an excuse to play with <a href="http://sinatra.rubyforge.org/">Sinatra web framework</a>, <a href="http://jquery.com">jQuery</a>, <a href="http://www.blueprintcss.org/">Blueprint</a>, <a href="http://www.schillmania.com/projects/soundmanager2/">soundmanager2</a> and <a href="http://www.cairographics.org/">Cairo</a>. <span>recortr</span> was written by <a href="http://jazzido.com">Manuel Aristarán</a>.</p>
+	<p>It's been tested on Firefox 3 and Safari on a Mac.</p>
+      </div>
+    </div> <!-- /container -->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+      var pageTracker = _gat._getTracker("UA-68057-12");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</html>
